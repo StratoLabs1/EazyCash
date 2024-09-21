@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eazy Cash Lottery</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to the CSS file -->
+</head>
+<body>
+    <header>
+        <h1>Eazy Cash Lottery</h1>
+        <button id="connect-wallet" class="wallet-btn">Connect Wallet</button>
+    </header>
+
+    <div id="network-info"></div>
+    <div id="wallet-info">
+        <p>Wallet Address: <span id="wallet-address"></span></p>
+    </div>
+    <div id="error-text"></div>
+    <div id="alert-list"></div>
+    <div id="loading" class="hidden">Loading...</div> <!-- Loading indicator -->
+
+    <div class="categories">
+        <div class="category" data-category="1">
+            <h2>Bronze</h2>
+            <p>Price: 1.2 USDT</p>
+            <p>Participants Required: 10</p>
+            <p>Prize: 10 USDT</p>
+            <p>30% of the Prize will be deducted for marketing, management, and future airdrops.</p>
+            <button class="buy-ticket" data-category="1">Buy Ticket</button>
+        </div>
+        <div class="category" data-category="2">
+            <h2>Silver</h2>
+            <p>Price: 5.2 USDT</p>
+            <p>Participants Required: 10</p>
+            <p>Prize: 50 USDT</p>
+            <p>30% of the Prize will be deducted for marketing, management, and future airdrops.</p>
+            <button class="buy-ticket" data-category="2">Buy Ticket</button>
+        </div>
+        <div class="category" data-category="3">
+            <h2>Gold</h2>
+            <p>Price: 10.2 USDT</p>
+            <p>Participants Required: 10</p>
+            <p>Prize: 100 USDT</p>
+            <p>30% of the Prize will be deducted for marketing, management, and future airdrops.</p>
+            <button class="buy-ticket" data-category="3">Buy Ticket</button>
+        </div>
+        <div class="category" data-category="4">
+            <h2>Platinum</h2>
+            <p>Price: 100.2 USDT</p>
+            <p>Participants Required: 2</p>
+            <p>Prize: 200USDT</p>
+            <p>30% of the Prize will be deducted for marketing, management, and future airdrops.</p>
+            <button class="buy-ticket" data-category="4">Buy Ticket</button>
+        </div>
+    </div>
+
+    <input type="text" id="referral-input" placeholder="Enter Referral Code" />
+    <div id="ticket-info"></div>
+    <div id="winner-info"></div>
+
+    <div id="notification" class="hidden"></div>
+
+    <script src="web3.min.js"></script>
+    <script src="your_script.js"></script>
+</body>
+</html>
